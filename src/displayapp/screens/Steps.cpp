@@ -86,7 +86,7 @@ void Steps::Refresh() {
   lv_obj_align(lSteps, nullptr, LV_ALIGN_CENTER, 0, -40);
 
   if (currentTripSteps < 100000) {
-    lv_label_set_text_fmt(tripLabel, "Trip: %5li", currentTripSteps);
+    lv_label_set_text_fmt(tripLabel, "Steps: %5li", currentTripSteps);
   } else {
     lv_label_set_text_fmt(tripLabel, "Trip: 99999+");
   }
